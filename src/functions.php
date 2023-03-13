@@ -1,6 +1,6 @@
 <?php
 
-if (PHP_VERSION_ID < 80000) {
+if (PHP_VERSION_ID >= 70400 && PHP_VERSION_ID < 80000) {
 
     if (!function_exists('str_contains')) {
         function str_contains(string $haystack, string $needle): bool
